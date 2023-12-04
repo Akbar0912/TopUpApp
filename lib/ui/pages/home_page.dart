@@ -126,16 +126,16 @@ class HomePage extends StatelessWidget {
             child: Column(
               children: const [
                 TransactionItem(
-                  iconUrl: 'assets/ic_transactions1.png',
-                  title: 'isi pulsa',
+                  iconUrl: 'assets/ic_transactions3.png',
+                  title: 'Paket 15 GB',
                   date: 'kemarin',
-                  value: '+ 450.000',
+                  value: '30.000',
                 ),
                 TransactionItem(
                   iconUrl: 'assets/ic_transactions3.png',
-                  title: 'Paket Data',
+                  title: 'Paket 50 GB',
                   date: 'kemarin',
-                  value: '- 50.000',
+                  value: '50.000',
                 ),
               ],
             ),
