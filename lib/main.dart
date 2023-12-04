@@ -1,6 +1,7 @@
 import 'package:ecommerce/ui/pages/home_page.dart';
 import 'package:ecommerce/ui/pages/onboarding_page.dart';
 import 'package:ecommerce/ui/pages/pages_success.dart';
+import 'package:ecommerce/ui/pages/profile_page.dart';
 import 'package:ecommerce/ui/pages/sign_in.dart';
 import 'package:ecommerce/ui/pages/sign_up.dart';
 import 'package:ecommerce/ui/pages/splash_page.dart';
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
         '/sign-up': (context) => const SignUp(),
         '/sign-up-success': (context) => const PagesSuccess(),
         '/home': (context) => const HomePage(),
+        '/profile': (context) => const ProfilePage(),
       },
     );
   }
