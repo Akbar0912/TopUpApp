@@ -16,21 +16,20 @@ class _OnboardingPageState extends State<OnboardingPage> {
   CarouselController carouselController = CarouselController();
 
   List<String> titles = [
-    'Grow your\n Financial Today',
-    'Build From\n Zero to Freedom',
-    'Start Together',
+    'Banyak Promo\nMenarik yang bisa didapatkan',
+    'harga paling murah\ndapat bersaing dengan yang lain',
+    'Mari bergabung',
   ];
 
   List<String> subtitles = [
-    'Our system is helping you to\n achieve a better goal',
-    'We provide tips for you so that\n you can adapt easier',
-    'We will guide you to where\n you wanted it too',
+    'kami hadir untuk mempermudah\nkegiatan anda',
+    'kami dapat diandalkan dalam\nmemberikan layanan termurah',
+    'Kami tunggu pembelian anda\npada aplikasi kami',
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: lightBackgroundColor,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -106,7 +105,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                               Navigator.pushNamedAndRemoveUntil(
                                   context, '/sign-up', (route) => false);
                             },
-                            text: 'Get Started',
+                            text: 'Daftar',
                             buttonColor: purpleColor,
                           ),
                           const SizedBox(
@@ -117,7 +116,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                               Navigator.pushNamedAndRemoveUntil(
                                   context, '/sign-in', (route) => false);
                             },
-                            text: 'Sign In',
+                            text: 'Masuk',
                           ),
                         ],
                       )

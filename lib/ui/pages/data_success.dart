@@ -2,8 +2,8 @@ import 'package:ecommerce/shared/theme.dart';
 import 'package:ecommerce/ui/widgets/custombutton.dart';
 import 'package:flutter/material.dart';
 
-class PagesSuccess extends StatelessWidget {
-  const PagesSuccess({super.key});
+class DataSuccess extends StatelessWidget {
+  const DataSuccess({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class PagesSuccess extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Akun anda\nberhasil dibuat',
+              'Paket Data\nBerhasil Terbeli',
               style: blackTextStyle.copyWith(
                 fontSize: 20,
                 fontWeight: semiBold,
@@ -24,7 +24,7 @@ class PagesSuccess extends StatelessWidget {
               height: 26,
             ),
             Text(
-              'Temukan berbagai promo\nmenarik di dalamnya',
+              'Nikmati promo\nmenarik lainnya',
               style: greyTextStyle.copyWith(
                 fontSize: 16,
               ),
@@ -38,11 +38,11 @@ class PagesSuccess extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamedAndRemoveUntil(
                   context,
-                  '/sign-in',
+                  '/home',
                   (route) => false,
                 );
               },
-              text: 'Masuk',
+              text: 'selesai',
             ),
           ],
         ),

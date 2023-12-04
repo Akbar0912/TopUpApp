@@ -11,7 +11,6 @@ class SignIn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: lightBackgroundColor,
       body: ListView(
           padding: const EdgeInsets.symmetric(
             horizontal: 24,
@@ -33,7 +32,13 @@ class SignIn extends StatelessWidget {
               ),
             ),
             TitlePage(
-              title: 'Sign In &\nGrow Your Finance',
+              title: 'Masuk',
+            ),
+            Text(
+              'selamat datang di aplikasi SignalCell',
+              style: greyTextStyle.copyWith(
+                fontSize: 16,
+              ),
             ),
             const SizedBox(
               height: 30,
@@ -51,7 +56,7 @@ class SignIn extends StatelessWidget {
                 children: [
                   // NOTE Input EMAIL
                   const CustomFromField(
-                    title: 'Email Addtess',
+                    title: 'Email Address',
                   ),
                   const SizedBox(
                     height: 16,
@@ -70,9 +75,9 @@ class SignIn extends StatelessWidget {
                   CustomButton(
                     onPressed: () {
                       Navigator.pushNamedAndRemoveUntil(
-                          context, '/sign-up-success', (route) => false);
+                          context, '/home', (route) => false);
                     },
-                    text: 'Sign In',
+                    text: 'Masuk',
                     buttonColor: purpleColor,
                   ),
                 ],
@@ -85,7 +90,7 @@ class SignIn extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, '/sign-up');
               },
-              text: 'Create New Account',
+              text: 'Buat Akun Baru',
             ),
           ]),
     );

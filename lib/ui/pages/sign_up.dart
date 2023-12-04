@@ -1,3 +1,4 @@
+import 'package:ecommerce/ui/pages/pages_success.dart';
 import 'package:ecommerce/ui/pages/sign_in.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,6 @@ class SignUp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: lightBackgroundColor,
       body: ListView(
           padding: const EdgeInsets.symmetric(
             horizontal: 24,
@@ -23,7 +23,7 @@ class SignUp extends StatelessWidget {
               width: 155,
               height: 50,
               margin: const EdgeInsets.only(
-                top: 100,
+                top: 80,
                 bottom: 50,
               ),
               decoration: const BoxDecoration(
@@ -35,7 +35,7 @@ class SignUp extends StatelessWidget {
               ),
             ),
             TitlePage(
-              title: 'Just Us to Unlock\nYour Growth',
+              title: 'Daftar sebagai pengguna tetap',
             ),
             const SizedBox(
               height: 30,
@@ -53,7 +53,7 @@ class SignUp extends StatelessWidget {
                 children: [
                   // NOTE Input NAME
                   const CustomFromField(
-                    title: 'Name',
+                    title: 'Nama',
                   ),
                   const SizedBox(
                     height: 16,
@@ -78,12 +78,9 @@ class SignUp extends StatelessWidget {
                   ),
                   CustomButton(
                     onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => SignIn()),
-                      );
+                      Navigator.pushNamed(context, '/sign-up-success');
                     },
-                    text: 'Continue',
+                    text: 'Masuk',
                     buttonColor: purpleColor,
                   ),
                 ],
@@ -96,7 +93,10 @@ class SignUp extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, '/sign-in');
               },
-              text: 'Sign In',
+              text: 'Sudah punya akun',
+            ),
+            const SizedBox(
+              height: 20,
             ),
           ]),
     );
