@@ -61,7 +61,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
               carouselController: carouselController,
             ),
             const SizedBox(
-              height: 80,
+              height: 40,
             ),
             Container(
               margin: const EdgeInsets.symmetric(
