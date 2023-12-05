@@ -1,4 +1,5 @@
 import 'package:ecommerce/shared/theme.dart';
+import 'package:ecommerce/ui/pages/sign_in.dart';
 import 'package:ecommerce/ui/widgets/profile_item.dart';
 import 'package:flutter/material.dart';
 
@@ -56,9 +57,14 @@ class ProfilePage extends StatelessWidget {
                   height: 40,
                 ),
                 ProfileItem(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SignIn()),
+                    );
+                  },
                   iconUrl: 'assets/ic_out.png',
                   title: 'Log Out',
-                  onTap: () {},
                 ),
               ],
             ),

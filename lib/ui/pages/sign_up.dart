@@ -1,5 +1,3 @@
-import 'package:ecommerce/ui/pages/pages_success.dart';
-import 'package:ecommerce/ui/pages/sign_in.dart';
 import 'package:flutter/material.dart';
 
 import 'package:ecommerce/shared/theme.dart';
