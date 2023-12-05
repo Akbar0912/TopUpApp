@@ -6,11 +6,11 @@ class ProfileItem extends StatelessWidget {
   final String title;
   final VoidCallback? onTap;
   const ProfileItem({
-    super.key,
+    Key? key,
     required this.iconUrl,
     required this.title,
     this.onTap,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
